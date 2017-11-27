@@ -1,7 +1,7 @@
 $(function () {
     $.ajax({
         type: 'GET',
-        url: 'http://ptx.transportdata.tw/MOTC/APIs/v2/Rail/TRA/Station?$top=10&$format=JSON', //欲呼叫之API網址(此範例為台鐵車站資料)
+        url: 'http://ptx.transportdata.tw/MOTC/APIs/v2/Rail/TRA/Station?$format=JSON', //欲呼叫之API網址(此範例為台鐵車站資料)
         dataType: 'json',
         headers: GetAuthorizationHeader(),
         success: function (Data) {
